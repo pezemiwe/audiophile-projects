@@ -1,22 +1,33 @@
-import { Button } from '@chakra-ui/react';
+import { Button } from "@chakra-ui/react";
 
-export const PrimaryButton: React.FC = () => {
+interface PrimaryButtonProps {
+  buttonText?: string;
+  width?: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+  onClick,
+  buttonText,
+  width,
+}) => {
   return (
     <Button
-      w='160px'
-      h='48px'
-      bgColor='#D87D4A'
-      color='#ffffff'
+      w={width || "160px"}
+      h="48px"
+      bgColor="#D87D4A"
+      color="#ffffff"
       borderRadius={0}
-      transition='all 0.3s ease-in-out'
-      fontSize='13px'
-      fontWeight='bold'
-      textTransform='uppercase'
+      transition="all 0.3s ease-in-out"
+      fontSize="13px"
+      fontWeight="bold"
+      textTransform="uppercase"
       _hover={{
-        bgColor: '#FBAF85',
+        bgColor: "#FBAF85",
       }}
+      onClick={onClick}
     >
-      See Product
+      {buttonText || "See Product"}
     </Button>
   );
 };
