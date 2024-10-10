@@ -11,7 +11,7 @@ export default function Checkout() {
       w="100%"
       paddingX={["24px", "24px", "40px", "10px"]}
     >
-      <Flex direction={"column"}>
+      <Flex direction="column">
         <Link
           href="/"
           _hover={{
