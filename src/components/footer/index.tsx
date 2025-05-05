@@ -138,7 +138,9 @@ const NavLinks = () => {
           color: "#D87D4A",
         }}
       >
-        <Link _hover={{ textDecoration: "none" }}>HOME</Link>
+        <Link href="/home" _hover={{ textDecoration: "none" }}>
+          HOME
+        </Link>
       </ListItem>
       <ListItem
         lineHeight="25px"
