@@ -4,3 +4,7 @@ export * from "./footer";
 export * from "./audio-gear";
 export * from "./checkout-details";
 export * from "./checkout-summary";
+export * from "./earphone-display";
+export * from "./audio-showcase";
+export * from "./speaker-showcase";
+export * from "./zx-speaker";
