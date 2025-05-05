@@ -2,8 +2,9 @@
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Footer, Navbar } from "@/components";
+import { Footer } from "@/components";
 import { Flex } from "@chakra-ui/react";
+import { Header } from "@/components/header";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function RootLayout({
       <body className={manrope.className}>
         <ChakraProvider>
           <Flex direction="column" w="100%" minH="100vh">
-            <Navbar />
+            <Header />
             <Flex flex="1" overflow="auto">
               {children}
             </Flex>
